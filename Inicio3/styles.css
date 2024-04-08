@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    font-family: outfit;
+}
+.contenedor {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.caja {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: linear-gradient(to bottom, #0084ff, #ff6a00);
+    bottom: -1px;
+    z-index: 5;
+}
+
+ul {
+    z-index: 99;
+    list-style: none;
+    text-align: center;
+    position: fixed;
+    margin: auto;
+    width: 95%;
+}
+
+ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contenedor_2 {
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.contenedor_2 h2 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.contenedor_2 p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.contenedor_2 a {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.caja_dentro {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat:repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin:center bottom;
+    background-size: 50% 80px;
+    animation: animate 18s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+}
